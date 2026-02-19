@@ -1,4 +1,4 @@
-export const runtime = 'edge';
+
 /**
  * IPTV Stream Proxy API Route
  * Proxies HLS manifests and media segments to avoid CORS issues.
@@ -7,7 +7,7 @@ export const runtime = 'edge';
 
 import { NextRequest, NextResponse } from 'next/server';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 function resolveUrl(base: string, relative: string): string {
   if (relative.startsWith('http://') || relative.startsWith('https://')) {
